@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+     .container {
+        text-align: left;
+        border: 1px solid rgb(255, 255, 255);
+        display: block;
+        margin: 18px 167px;
+        background-color: #9fdf81;
+        padding: 13px 90px;
+        border-radius: 9px;
+      }
+      #header {
+        color: rgba(255, 254, 254, 0.929);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 27px;
+      }
+      .text { 
+        margin: -23px 49px;
+        padding: 30px 7px;
+        font-family 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        color: rgb(28, 27, 27);
+        
+
+        
+    
+      }
+      #form{
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(239, 240, 248);
+        margin:-20px 167px;
+        padding:46px 28px ;
+        border-radius: 9px;
+      }
+      ::placeholder{
+        color: rgb(84, 80, 80);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .submit{
+        margin: 12px 55px;
+        padding: 10px 26px;   
+        color:  rgb(255, 255, 255);
+        background-color: #9fdf81;
+        border: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        border-radius: 6px;
+        
+      }
+      input{
+        border-radius: 6px;
+      }
+      textarea{
+        border-radius: 6px;
+      }
+    </head>
+    <body>
+  
+    <form class="container" action="">
+      <div id="header">
+        <h2>Contact Form</h2>
+        <p>Please form all the text in the field.</p>
+      </div>
+    </form>
+    <form id="form" action="">
+    <label for="name" class="text" >Your Name:</label>
+    <p  class="text">
+      <input type="text" name="name" id="name" placeholder="Your Full Name" >
+    </p>
+    <br>
+     <label for="email" class="text" > Your Email:</label>
+    <p class="text">
+        <input type="email"name="Email" id="email"placeholder="Valid Email Address">
+    </p><br>
+    <label class="text"for="message">Message:</label>
+    <p class="text"> 
+      <textarea name="message" id="message" cols="80" rows="10" placeholder=" Your Message to Us">
+      </textarea>
+    </p>
+    <label  class="text" for="subject">Subject:</label>
+    <p class="text"> <input type="text" name="subject" id="subject"  placeholder="Job inquiry">
+    </p>
+    <input class="submit" type="submit">
+</form>
+  </body>
+</html>
